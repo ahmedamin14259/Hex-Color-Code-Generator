@@ -1,0 +1,46 @@
+body {
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hexBtn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  outline: none;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.hexBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hexBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hexBtn:hover span {
+  padding-right: 25px;
+}
+
+.hexBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
